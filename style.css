@@ -54,6 +54,28 @@ html {
     border: 1px solid var(--scrollbarBG);
   }
   /* ______________________________________________ */
+.social{
+      border-top-left-radius: 15px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      background-color: #810CF8;
+      color: white;
+      padding: 10px 15px;
+    }
+    .social a{
+        line-height: 170%;
+    }
+    .social span{
+        font-size: 18px;
+    }
+    .social i{
+        font-size: 23px;
+    }
+
 nav{
     z-index: 999;
     display: flex;
