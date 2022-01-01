@@ -688,8 +688,34 @@ width: 150px;
 .fab:hover, .fa:hover{
 color: black;
 }
+address{
+    color: #d7afff;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 14px;
+}
+footer span{
+    font-style: normal;
+    font-size: 10px;
+}
 
 @media only screen and (max-width:800px) {
+    address{
+        width: 100%;
+        font-style: normal;
+        text-align: center;
+        padding-top: 50px;
+        color: #d7afff;
+        position: absolute;
+        bottom: 20px;
+        left: 0px;
+        font-size: 15px;
+    }
+    footer span{
+        font-style: italic;
+        font-size: 10px;
+    }
     .wel{
         background: url(img/reshome.png);
         background-repeat: no-repeat;
@@ -736,9 +762,9 @@ color: black;
     .container ul{padding: 5px;}
     .MU svg{width: 80px; border-radius: 20px;}
     .info{height: 65vh;}
-    footer{height: 20vh;} footer a{height: 10vh;}
-    #vfw img{left: calc(50% - 50px);top: calc(50% - 50px);width: 100px;}
-    .ds{width: 30px; padding: 0 15px;}
+    footer{height: 45vh;} footer a{height: 10vh;}
+    #vfw img{left: calc(50% - 50px);top: calc(50% - 125px);width: 100px;}
+    .ds{width: 30px; padding:0; top: calc(50% + 10px); right: calc(50% - 15px);}
     .ds a{height: 10vh;}
     .ds img{width: 25px;}
     .TLogo h1{font-weight: 400;font-size: 20px;}
