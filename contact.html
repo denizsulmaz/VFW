@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>V For Woman</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name='url' content='vforwoman.netlify.app'>
+  <meta name='copyright' content='V For Woman™'>
+  <meta name='language' content='EN, TR'>
+  <meta name='robots' content='index,follow'>
+  <meta name='author' content='Deniz Sulmaz, ds@vforwoman.org'>
+  <meta name='designer' content='Deniz Sulmaz'>
+  <meta name='developer' content='Deniz Sulmaz'>
+  <meta name='owner' content='Deniz Sulmaz, Zahide Coşkun'>
+  <meta name='reply-to' content='hi@vforwoman.org'>
+  <meta name='coverage' content='Worldwide'>
+  <meta name='distribution' content='Global'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css"> 
+  <link rel="shortcut icon" href="img/VFW.ico" type="image/x-icon">
+  <title>V For Woman | Worldwide Equality Activist And Social Movement Against Violence.</title>
+  <meta name="description" content="We Are An Independent Community With The Responsibility Of Promoting Equality And Diversity, Eliminating Illegal Discrimination, Protecting, Promoting And Informing The Human Rights Of Everyone, Especially In Turkey And Around The World.">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0TEHWXRNL"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-B0TEHWXRNL');
+  </script>
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+ (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+ m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+ (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+ ym(86678938, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true
+ });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/86678938" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<style>
+       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 body{
     background-image: url(img/womans0.png);
     background-size: 100%;
@@ -17,6 +55,11 @@ body{
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+}
+.ovTest{
+  overflow-y: hidden;
+  height: 200vh;
+  margin-bottom: -7vh ;
 }
 a{text-decoration: none;color: unset;}li{list-style: none;}
 /* ScrollBar_____________________________ */
@@ -44,52 +87,7 @@ html {
 
   /* ScrollBar_____________________________ */
 
-  /* ______________________________________________ */
-nav{
-    z-index: 999;
-    display: flex;
-    justify-content: flex-start;   
-    align-items: center; 
-    background-color: black;
-    height: 8vh;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-.navRight{
-    position: fixed;
-    right: 20px;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    color: #b060ff;
-}
-.TLogo{
-    color: #810CF8;
-    display: flex;
-    justify-content: flex-start;
-}
-.TLogo h1{
-    font-weight: 500;
-    letter-spacing: 2.5px;
-    padding: 0px 15px;
-}
-.logo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.logo img{
-    width: 50px;
-    height: 50px;
-}
-nav ul{
-    color: wheat;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
+ 
 /* -------Main------ */
 /* Style the tab */
 .tab {
@@ -100,6 +98,7 @@ nav ul{
   align-items: center;
   width: 40%;
   margin: 10vh 30%;
+  margin-top: 15vh;
   margin-bottom: 0vh !important;
   overflow: hidden;
   background-color: #230046;
@@ -138,9 +137,9 @@ nav ul{
   background-color: rgba(0, 0, 0, 0.267);
   backdrop-filter: blur(7px);
   border-radius: 27px;
-  height: 80vh;
-  width: 80%;
-  margin: 10vh 10%;
+  height: 200vh;
+  width: 110%;
+  margin: 10vh -5%;
   margin-top: 1vh;
   overflow: hidden;
   display: none;
@@ -153,11 +152,7 @@ nav ul{
   width: 100%;
   height: 100%;
 }
-.formFooter{
-  display: none !important;
-  opacity: 0 !important;
-  visibility: hidden !important;
-}
+
 
 /* Fade in tabs */
 @-webkit-keyframes fadeEffect {
@@ -170,39 +165,6 @@ nav ul{
   to {opacity: 1;}
 }
 /* ------------------------------------------- */
-footer{
-    position: relative;
-    height: 30vh;
-    background-color: #230046;
-}
-footer a{
-    height: 20vh;
-    padding: 5vh 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-footer img{
-    width: 125px;
-}
-.ds{
-    position: absolute;
-    bottom: 0;
-    left: 0px;
-    background-color: black;
-    width: 50px;
-    padding: 0px 25px;
-    border-top-right-radius: 20px;
-}
-.ds img{
-    width: 44px;
-}
-.ds a{
-    height: 15vh;
-    padding: 0;
-}
-/* --------------------------------------Responsive */
-
 @media only screen and (max-width:800px) {
     .wel{
         overflow: hidden;
@@ -211,73 +173,97 @@ footer img{
         display: flex;
         flex-direction: column;
     }
-    footer{height: 20vh;} footer a{height: 10vh;}
-    footer img{width: 80px;}
-    .ds{width: 30px; padding: 0 15px;}
-    .ds a{height: 10vh;}
-    .ds img{width: 25px;}
-    .TLogo h1{font-weight: 400;font-size: 20px;}
+   .ovTest{margin-bottom: -10vh;}
     .tab {width: 90%; margin: 9vh 5%; margin-bottom: 0vh !important; padding: 5px;}
     .tab button{padding: 8px 12px;}
-    .tabcontent{width: 94%; margin: 1.5vh 3%;}
+    .tabcontent{width: 105%; margin: 1.5vh 0%;}
 }
-    </style>
+</style>
+
 </head>
 <body>
+    <div class="seo" style="display: none;">
+      <h1>V For Woman | vforwoman</h1>
+      <h2>V For Woman | vforwoman</h2>
+      <h3>V For Woman | vforwoman</h3>
+      <h4>V For Woman | vforwoman</h4>
+      <h5>V For Woman | vforwoman</h5>
+      <h6>V For Woman | vforwoman</h6>
+    </div>
+    <div class="top">
+        <a href="index.html"><img src="img/LogoText.png" alt="V For Woman"></a>
+    </div>
     <nav>
-        <a class="logo" href="index.html"><img src="img/VB.png" alt="VFW"></a>
-        <!-- --- -->
-        <a class="TLogo" href="index.html"><h1>|  V For Woman</h1></a>
-        <!-- --- -->
-        <a class="navRight" href="iletisim.html">ᵀᴿ</a>
-        <!-- <ul>
-            <li><a href="#">##</a></li>
-            <li><a href="#">##</a></li>
-            <li><a href="#">##</a></li>
-        </ul> -->
+        <ul class="menu">
+          <a href="anasayfa.html"><li data-text="Change Lang.">Anasayfa</li></a>
+          <a href="index.html"><li data-text="Contact">Home</li></a>
+          <a href="mailto:team@vforwoman.org"><li data-text="Representative">Representative</li></a>
+            <span class="menuSocial" >
+                <a href="https://www.instagram.com/vforwoman/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a> | 
+                <a href="https://twitter.com/vforwoman" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a> | 
+                <a href="https://www.linkedin.com/company/vforwoman/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a> | 
+                <a href="mailto:hi@vforwoman.org" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i></a>
+            </span>
+        </ul>
     </nav>
+    <button class="menu-toggle"><img src="img/burger.png" alt=""></button>
     <!-- ------------------------------------------------------------ -->
+   
     <main>
     
-<div class="tab">
-    <button class="tablinks" onclick="openContact(event, 'Contact')" id="defaultOpen">Contact</button>
-    <button class="tablinks" onclick="openContact(event, 'Volunteer')">Be Volunteer</button>
-  </div>
-  
-  <div id="Contact" class="tabcontent">
-    <iframe id="Iframe" src="https://form.jotform.com/213261114290039" frameborder="0"></iframe>
-  </div>
-  
-  <div id="Volunteer" class="tabcontent">
-    <iframe id="Iframe" src="https://form.jotform.com/213292340693960" frameborder="0"></iframe>
-  </div>
-    </main>
+      <div class="tab">
+          <button class="tablinks" onclick="openContact(event, 'Contact')" id="defaultOpen">Contact</button>
+          <button class="tablinks" onclick="openContact(event, 'Volunteer')">Be Volunteer</button>
+        </div>
+        
+        <div class="ovTest">
+        <div id="Contact" class="tabcontent">
+          <iframe id="Iframe" src="https://form.jotform.com/213261114290039" frameborder="0"></iframe>
+        </div>
+        
+        <div class="ovTest">
+        <div id="Volunteer" class="tabcontent">
+          <iframe id="Iframe" src="https://form.jotform.com/213292340693960" frameborder="0"></iframe>
+        </div>
+      </div>
+          </main>
+          
+      
+
     <!-- ------------------------------------------------------------ -->
     <footer>
-        <a href="index.html"><img src="img/VFW.png" alt=""></a>
-        <div class="ds"><a href="http://bit.ly/siteds"><img src="img/ds.png" alt=""></a></div>
-    </footer>
-
+        <a id="vfw" href="index.html"><img src="img/LogoWhite.png" alt=""></a>
     
-<script>
-    function openContact(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-    //
-    document.getElementById("defaultOpen").click();
+          <address>© 2022 All Rights Reserved V For Woman. <br><span>By using the site you accept cookies. Only technical cookies are used.</span></address>
+      
+        <div id="ds" class="ds"><a href="http://bit.ly/siteds" target="_blank" rel="noopener noreferrer"><img src="img/ds.png" alt=""></a></div>
+    </footer>
+    <!-- ------------------------------------------- -->
+    <script>
+        document.querySelector('button').addEventListener('click', function(){
+    document.querySelector('body').classList.toggle('open');
+   });
 
-   
+  function openContact(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      //
+      document.getElementById("defaultOpen").click();
     </script>
-       
 </body>
 </html>
+
+
+
+
+
