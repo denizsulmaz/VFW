@@ -328,6 +328,7 @@ ul.menu li:hover:after {
     color: white;
 }
 .details-modal {
+    margin-top: 2vh;
     z-index: 9999;
     background:rgba(129, 11, 246, 0.555);
     backdrop-filter: blur(5px);
@@ -340,7 +341,7 @@ ul.menu li:hover:after {
     transform: translate(-50%, -50%);
     width: 75vw;
     text-align: center;
-    height: 70vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -362,7 +363,7 @@ ul.menu li:hover:after {
 }
 .details-modal .details-modal-title {
     color: #111827;
-    padding: 1.5em 2em;
+    padding: 0 2em;
     pointer-events: all;
     position: relative;
     width: calc(100% - 4.5em);
@@ -370,16 +371,41 @@ ul.menu li:hover:after {
 .details-modal .details-modal-title h1 {
     color: white;
     font-size: 35px;
+    margin: 10px 0;
     font-weight: 600;
     line-height: normal;
 }
 .details-modal .details-modal-content {
-    font-size: 23px;
+    overflow-x: hidden;
+    font-size: 18px;
     color: white;
     border-top: 1px solid #e0e0e0;
     padding: 2em;
     pointer-events: all;
     overflow: auto;
+}
+.details-modal-content .row{
+    display: flex;
+    flex-direction: row;
+}
+.eventLeft{
+    width: 35%;
+}
+.eventLeft a{
+    transition: 0.5s ease-in-out;
+    font-size: 18px;
+    border-radius: 6px;
+    color: white;
+}
+.inspect{ color: white;}
+.buy{border: 2px solid white; color: white; padding: 5px 15px;}
+.buy:hover{background-color: var(--purp); color: white; border: 2px solid var(--purp);}
+.eventLeft img{width: 400px; border-radius: 16px;margin-bottom: 10px;}
+.eventRight{
+    font-size: 20px;
+    text-align: left;
+    margin-left: 5%;
+    width: 65%;
 }
 .details-modal-overlay {
     z-index: 2;
@@ -726,6 +752,16 @@ footer span{
         display: flex;
         flex-direction: column;
     }
+    /* ---Event */
+    .details-modal-content{padding: 10px !important;}
+    .details-modal-content .row{display: flex;flex-direction: column;}
+    .details-modal{width: 100%;}
+    .eventLeft{width: 100%;}
+    .buy{border: 2px solid white; color: white; padding: 5px 15px;}
+    .buy:hover{background-color: var(--purp); color: white; border: 2px solid var(--purp);}
+    .eventLeft img{width: 290px; border-radius: 16px;margin-bottom: 10px;}
+    .eventRight{font-size: 16px;margin-left: 0%;width: 100%; margin-top: 3vh;}
+    /* ---- */
     .top img{top: 1vh;}
     .menu-toggle img{width: 30px;}
     .menu-toggle{top: 1.7vh;}
