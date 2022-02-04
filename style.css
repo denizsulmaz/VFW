@@ -753,6 +753,7 @@ footer span{
         flex-direction: column;
     }
     /* ---Event */
+    .eventsRes{display: none;}
     .details-modal-content{padding: 10px !important;}
     .details-modal-content .row{display: flex;flex-direction: column;}
     .details-modal{width: 100%;}
