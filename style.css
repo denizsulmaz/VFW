@@ -323,6 +323,14 @@ ul.menu li:hover:after {
     cursor: pointer;
     display: inline-block;
     font-weight: 700;
+    animation: events 8s;
+}
+@keyframes events {
+    0%{color: var(--purp);}
+    30%{color: white;}
+    40%{color: var(--purp);}
+    70%{color: white;}
+    90%{color: white;}
 }
 .mButton:hover {
     color: white;
