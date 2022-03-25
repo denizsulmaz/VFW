@@ -647,9 +647,9 @@ marquee{
     height: 60vh;
     overflow-y: scroll;
     background-color: rgb(255, 255, 255);
-    margin: 0px 40px;
+    margin: 0px 16vw;
     margin-top: 60px;
-    padding: 30px 40px;
+    padding: 30px 10px;
 }
 .container h1{
     position: sticky;
@@ -660,6 +660,7 @@ marquee{
     color: #810CF8;
 }
 .container li{
+    cursor: context-menu;
     font-size: 18px;
     line-height: 200%;
 }
@@ -672,6 +673,7 @@ marquee{
     justify-content: flex-end;
 }
 .MU svg{
+    cursor: pointer;
     border-radius: 15px;
 }
 /* ------------------------------------------- */
@@ -733,8 +735,67 @@ footer span{
     font-style: normal;
     font-size: 10px;
 }
-
+/* ---- UDHR SECTION ----------- */
+.udhr{
+    height: 100vh;
+    width: 80vw;
+    margin: 0 10vw;
+}
+.udhrRow{
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto auto;
+}
+.download{
+    margin-top: 3vh;
+    transition: 0.3s ease-in-out;
+    border-radius: 50px;
+    color: white;
+    background-color: #3B0570;
+    width: 170px;
+    text-align: center;
+    padding: 10px 0;
+}
+.download:hover{
+    background-color: #800BF6;
+}
+.udhrRow img{
+    transition: 0.4s ease-in-out;
+    box-sizing: border-box;
+    border-radius: 16px;
+    width: 400px;
+}
+.udhrRow img:hover{
+    border: 3px solid #9e3dff;
+}
+.udhrEn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.udhrTr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.udhr hr{
+    opacity: 0.6;
+}
 @media only screen and (max-width:800px) {
+
+    .udhr{width: 96vw;margin: 0 2vw;margin-top: 10vh;margin-bottom: -40vh;}
+    .udhrRow{height: 50vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto auto;
+    }
+    .udhrRow img{border-radius: 6px;width: 150px;}
+    .download{width: 125px;font-size: 13px;}
     address{
         width: 100%;
         font-style: normal;
