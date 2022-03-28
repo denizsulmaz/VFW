@@ -1,0 +1,12 @@
+.recentProjects{
+    width: 90vw;
+display: flex;
+justify-content: center;
+margin: 15vh 0;
+}
+.grid{
+    display: flex;
+    flex-direction: row;
+}
+.post iframe{border-radius: 16px;}
+.post:nth-child(2){margin: 0 2vw;}

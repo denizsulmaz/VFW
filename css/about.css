@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap');
+main{
+    margin-top: 9vh;
+}
+.top{
+    box-shadow: 0 3px 20px rgba(255, 255, 255, 0.075);
+}
+.contain{
+    color: white;
+    width: 66vw;
+    margin: 0 17vw;
+}
+.contain h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    color: black;
+    font-weight: 900;
+    -webkit-text-stroke: 2.5px #6909CA;
+    margin-bottom: -1vh;
+}
+.contain p{
+    background-color: #460885;
+    border-radius: 25px;
+    padding: 2.5vw;
+    font-size: 21px;
+    line-height: 150%;
+}
+
+.splide{
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: 0 10vw;
+    height: 50vh;
+    margin-top: 20vh;
+}
+.splide__arrow{
+    background-color: #6909CA !important;
+}
+
+.splide__arrow--prev{
+    left: -1em !important;
+}
+.splide__pagination{
+    display: none !important;
+}
+.person{
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start ;
+    text-align: center;
+    align-items: center;
+}
+.person .fa-linkedin:hover{
+    color: rgb(77, 77, 235);
+}
+
+.person .image{
+border-radius: 23px;
+background-color: rgb(0, 0, 0);
+width: 200px;
+height: 200px;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.person img{width: 200px;}
+.person .zc{
+    width: 320px !important;
+}
+.person #dsimg{border: 3px solid rgba(255, 255, 255, 0.096);}
+.person a{padding: 0 5px;}
+.person h3{
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+.person h4{
+    margin-top: 1vh;
+    font-weight: 400;
+}
+.sup{
+    transition: 0.3s ease-in-out;
+display: flex;
+justify-content: center;
+width: 170px;
+margin: 10vh auto;
+text-align: center;
+padding: 8px 20px;
+border-radius: 30px;
+background-color: black;
+color: #760fdd;
+border: 2px solid #6909CA;
+}
+.sup:hover{
+    color: aliceblue;
+    background-color: #460885;
+    border: 2px solid #000000;
+}
