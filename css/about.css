@@ -60,7 +60,7 @@ main{
 }
 
 .person .image{
-border-radius: 23px;
+border-radius: 10px;
 background-color: rgb(0, 0, 0);
 width: 200px;
 height: 200px;
@@ -70,9 +70,6 @@ justify-content: center;
 align-items: center;
 }
 .person img{width: 200px;}
-.person .zc{
-    width: 320px !important;
-}
 .person #dsimg{border: 3px solid rgba(255, 255, 255, 0.096);}
 .person a{padding: 0 5px;}
 .person h3{
