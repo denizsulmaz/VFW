@@ -23,7 +23,7 @@ main{
     background-color: #460885;
     border-radius: 25px;
     padding: 2.5vw;
-    font-size: 21px;
+    font-size: 23px;
     line-height: 150%;
 }
 
@@ -35,7 +35,7 @@ main{
     width: 80vw;
     margin: 0 10vw;
     height: 50vh;
-    margin-top: 20vh;
+    margin-top: 13vh;
 }
 .splide__arrow{
     background-color: #6909CA !important;
