@@ -1,0 +1,2 @@
+- name: VFW
+  uses: Cecilapp/VFW@3.2.1
