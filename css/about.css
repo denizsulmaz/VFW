@@ -23,7 +23,7 @@ main{
     background-color: #460885;
     border-radius: 25px;
     padding: 2.5vw;
-    font-size: 23px;
+    font-size: 21px;
     line-height: 150%;
 }
 
@@ -35,7 +35,7 @@ main{
     width: 80vw;
     margin: 0 10vw;
     height: 50vh;
-    margin-top: 13vh;
+    margin-top: 20vh;
 }
 .splide__arrow{
     background-color: #6909CA !important;
@@ -101,4 +101,13 @@ border: 2px solid #6909CA;
     color: aliceblue;
     background-color: #460885;
     border: 2px solid #000000;
+}
+@media only screen and (max-width:800px) {
+    .contain{ width: 96vw;margin: 0 2vw;}
+    .contain h1{font-size: 45px;    -webkit-text-stroke: 1.5px #6909CA;}
+    .contain p{
+        border-radius: 20px;
+        line-height: 140%;
+        font-size: 14px;padding: 2vh 4vw;}
+    .splide, .sup{display: none;}
 }
