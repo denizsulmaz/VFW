@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap');
 body{
     background-color: black;
     padding: 0;
@@ -7,6 +7,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 a{text-decoration: none;color: unset;}li{list-style: none;}
+h1{font-weight: 600;}.resWel{display: none;}
 /* ScrollBar_____________________________ */
 html {
     --scrollbarBG: #000000;
@@ -56,7 +57,7 @@ html {
   }
   /* ______  Overlay Menu  __________ */
   .top{
-      z-index: 1;
+      z-index: 7;
       height: 7vh;
       background-color: black;
       width: 100%;
@@ -80,7 +81,7 @@ ul li {
     font-size: 48px;
 }
 .menu-toggle {
-    z-index: 99;
+    z-index: 99 !important;
     cursor: pointer;
     opacity: 1;
     background-color: transparent;
@@ -176,6 +177,8 @@ nav:before {
     overflow: hidden;
 }
 .open nav {
+    z-index: 9;
+
     top: 0;
 }
 .open nav:before {
@@ -191,6 +194,7 @@ ul.menu {
     color: white;
 }
 ul.menu li {
+    width: 300px;
     opacity: 0;
     text-align: center;
     line-height: 200%;
@@ -312,6 +316,7 @@ ul.menu li:hover:after {
 
 /* ------Modal------ */
 .mButton{
+    z-index: 9 !important;
     transition: 0.5s ease-in-out;
     position: fixed;
     top: 1.5vh;
@@ -446,26 +451,136 @@ details summary::-webkit-details-marker {
     max-width: 40em;
 }
 /* -------Main------ */
-.wel{
+/* ------------------Main */
+.mainSlide{
+    background: url('img/home.webp') no-repeat center;
+    background-position: 50% 10%;
+    background-size: 100%;
+    width: 100%;
+}
+.two{
+    background: url('img/udhrslider.png') no-repeat center;
+    background-position: 50% 50%;
+    background-size: 100%;
+    width: 100%;
+}
+.two .left{margin-top: 20vh;width: 30% !important;}
+.two .left p{font-size: 35px;margin-bottom: 0;}
+.three{
+    position: relative;
+    background: url('img/teamslider.png') no-repeat center;
+    background-position: 50% 50%;
+    width: 100%;
+}
+.three a{
+    position: absolute;
+    /* left: 50%; */
+    bottom: 250px;
+}
+.three a{
+    z-index: 0;
+    transition: 0.4s ease-in-out;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 10px 15px;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    animation: action 3s ease-in-out infinite;
+}
+.three a:hover{
+    background-color:#810CF8;
+    color: rgb(244, 232, 255) !important;
+    padding: 10px 20px;
+    border: 2px solid #810CF8 !important;
+    border-radius: 50px !important;
+
+}
+#image-slider{z-index: 0;}
+.splide__pagination{
+    opacity: 0.7;
+    left: unset !important;
+    right: 200px !important;
+    bottom: 30px !important;
+}
+.splide__slide img {
+    width: 95vw;
+    z-index: 0;
+}
+.splide__slide {
+    background-color: #28024f;
+    cursor:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.splide .splide__arrows{
+    background-color: #000000;
+}
+.splide .splide__arrow {
+    transform: scale(1.1, 1.1) !important;
+    cursor: pointer;
+    position: absolute;
+    top: unset;
+    bottom: 75px;
+    transform: none;
+    border-radius: unset;
+    width: 60px;
+    height: 60px;
+    opacity: 1;
+    backdrop-filter: blur(4px);
+    transition: 0.3s ease-in-out;
+}
+.splide .splide__arrow:hover{backdrop-filter: blur(1px);background-color: rgba(74, 23, 124, 0.4);}
+.splide .splide__arrow svg {
+    filter: invert(1);
+    width: 90px;
+    height: 90px;
+}
+.splide__arrow.splide__arrow--prev {
+    font-size: 25px;
+    right: 314px;
+    left: unset;
+    top: unset;
+    padding: 10px 20px 10px 10px;
+    background: rgba(63, 12, 114, 0.59);
+    border-radius: 14px 0 0 14px;
+    box-sizing: content-box;
+}
+.splide__arrow.splide__arrow--next {
+    font-size: 25px;
+    right: 216px;
+    padding: 10px 10px 10px 20px;
+    box-sizing: content-box;
+    background: rgba(63, 12, 114, 0.59);
+    border-radius: 0 14px 14px 0;
+}
+/* Slider End */
+/* .wel{
     background-image: url(img/home.webp);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
     overflow: hidden;
     margin-top: 8vh;
-    height: 92vh;
+    position: relative;
+    overflow-x: hidden;
+    height: 98vh;
     display: flex;
     flex-direction: row;
-}
-.left{
-    margin-top: 30px;
+} */
+.wel .left{
+    position: absolute;
+    left: 50px;
+    top: 100px;
     padding-left: 50px;
     color: rgb(226, 200, 250);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
-    width: 50%;
+    width: 47%;
 }
 .left img{
     width: 20%;
@@ -515,13 +630,19 @@ details summary::-webkit-details-marker {
     height: 100vh;
 }
 .topwave{
-    margin-top: -35vh;
+    position: relative;
+    z-index: 1;
+    margin-top: -10vh;
+    margin-bottom: 9vh;
+    /* height: 100px !important; */
+    width: 100% !important;
 }
 .bottomwave{
     margin-bottom: -20vh;
 }
 .wrapper{
     margin-top: -10vh;
+    margin-bottom: -13vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -533,12 +654,15 @@ details summary::-webkit-details-marker {
     padding-bottom: 30px;
     text-align: center;
     letter-spacing: 3px;
+    z-index: 1;
 }
 .wrapper p{
     margin: 5px 0;
     font-size: 18px;
     text-align: center;
     font-weight: 500;
+    z-index: 2;
+
 }
 .wrapper span{
     color: #ecd9ff;
@@ -619,12 +743,14 @@ marquee{
     right: 150px;
 }
 .repr{
+    position: relative;
     display: flex;
     flex-direction: row;
 }
 .repr .left{
     padding-left: 200px ;
     width: 50%;
+    margin-top: 20vh;
 }
 .repr .left p{color: #E3E8EB; width: 80%;}
 .repr .right{
@@ -693,14 +819,14 @@ width: 150px;
 }
 .ds{
     position: absolute;
-    bottom: 15px;
-    right: 0px;
-    width: 50px;
+    bottom: 30px;
+    right: 10px;
+    width: 80px;
     padding: 0px 25px;
     border-top-right-radius: 20px;
 }
 .ds img{
-    width: 35px;
+    width: 80px;
 }
 .ds a{
     height: 15vh;
@@ -817,10 +943,11 @@ footer span{
         background-size: 100%;
         overflow: hidden;
         margin-top: 2vh;
-        height: 115vh;
+        height: 90vh;
         display: flex;
         flex-direction: column;
     }
+    .topwave{margin-bottom: 2vh;}
     /* ---Event */
     .eventsRes{display: none;}
     .details-modal-content{padding: 10px !important;}
@@ -855,25 +982,35 @@ footer span{
     .line img{width: 70vw;margin-left: calc(50% - 35vw);border-radius: 30px; margin-bottom: 5vh;}
     marquee{border-radius: 120px;font-size:35px;}
     /* ------- */
+    .portre{margin-bottom: 25vh;z-index: 1;}
     .portre .alone{top:0px;left: 20px;}
     .portre .forall{bottom:0px;right:40px;}
-    .repr{flex-direction: column-reverse;}
-    .repr .left{width: 100%; margin:0;margin-top: 10vh; padding: 0;padding-bottom: 5vh;}
+    .repr{flex-direction: column-reverse;z-index: 0;margin-top: -25vh;}
+    .repr .left{width: 100%; margin:0;margin-top: 10vh; padding: 0;padding-bottom: 5vh;flex-direction: column;display: flex;}
     .repr .right{height: 40vh !important;margin-top: -25vh;padding-bottom: 25vh;}
     /* ------- */
     .container{margin: 10px 15px;padding: 5px 7px; height: 60vh;}
-    .container h1{font-size: 20px; top: -5px;}
+    .container h1{font-size: 18px; top: -5px;}
     .centerText{width: 100%;margin: 0;}
-    .container li{line-height: 150%; font-size: 16px;}
+    .container li{line-height: 120%; font-size: 13px;}
     .container ul{padding: 5px;}
     .MU svg{width: 80px; border-radius: 20px;}
-    .info{height: 65vh;}
+    .info{height: 65vh; display: none;}
     footer{height: 45vh;} footer a{height: 10vh;}
     #vfw img{left: calc(50% - 50px);top: calc(50% - 125px);width: 100px;}
-    .ds{width: 30px; padding:0; top: calc(50% + 10px); right: calc(50% - 15px);}
+    .ds{width: 60px; padding:0; top:50%; right: calc(50% - 30px);}
     .ds a{height: 10vh;}
-    .ds img{width: 25px;}
+    .ds img{width: 60px;}
     .TLogo h1{font-weight: 400;font-size: 20px;}
     .social{display: none;}
     .un img{width: 320px;margin-left: calc(50% - 160px);margin-bottom: 10vh;}
+    #image-slider{display: none;}
+    .resWel{display: flex;justify-content: center;text-align: left;flex-direction: column;
+    width: 100%;margin-top:27vh; padding: 80px 0;padding-bottom: 0;}
+    .resWel h2{text-align: left;font-size: 18px; width: 90vw; margin-top: -10px;font-weight: 500;color: #E3E8EB;margin-left: 20px;}
+    .resWel img{width: 20%;margin-top: -27%;margin-bottom: 10%;align-self: flex-end;}
+    .resWel p{width: 90%;font-size: 14px;padding-bottom: 10px;color: #d7afff;margin-left: 20px;margin-top: -5px;line-height: 150%;}
+    .resWel a{color: #ede4f5;background-color:#810CF8;padding: 7px 20px;border: 2px solid #810CF8;
+    border-radius: 50px !important;width: 100px;margin-left: 20px;}
+
 }
