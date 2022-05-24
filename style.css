@@ -502,7 +502,7 @@ details summary::-webkit-details-marker {
     right: 200px !important;
     bottom: 30px !important;
 }
-#home .splide__slide img {
+.splide__slide img {
     width: 95vw;
     z-index: 0;
 }
