@@ -496,17 +496,17 @@ details summary::-webkit-details-marker {
 
 }
 #image-slider{z-index: 0;}
-.splide__pagination{
+#home .splide__pagination{
     opacity: 0.7;
     left: unset !important;
     right: 200px !important;
     bottom: 30px !important;
 }
-.splide__slide img {
+#home .splide__slide img {
     width: 95vw;
     z-index: 0;
 }
-.splide__slide {
+#home .splide__slide {
     background-color: #28024f;
     cursor:auto;
     display: flex;
