@@ -1,12 +1,50 @@
+*{box-sizing: border-box;}
+html{box-sizing: border-box;}
+body{overflow-x: hidden;}
 .recentProjects{
     width: 90vw;
 display: flex;
 justify-content: center;
-margin: 15vh 0;
+margin: 5vh 0;
 }
 .grid{
+    overflow-x: hidden;
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
 .post iframe{border-radius: 16px;}
 .post:nth-child(2){margin: 0 2vw;}
+.linktree{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 5vw 7vw;
+    color: white;
+    text-align: center;
+}
+.linktree a{
+    padding: 8px 15px;
+    width: 100%;
+    border-radius: 50px;
+    margin: 15px 0;
+    background-color: #6d06d3;
+}
+.ds{right: 50px;}
+@media only screen and (max-width:900px){
+.recentProjects{flex-direction: column;width: 100vw;}
+.recentProjects h1{color: white;text-align: center;letter-spacing: 2px;font-weight: 400;font-size: 25px;}
+.linktree h1{color: white;text-align: center;letter-spacing: 2px;font-weight: 400;font-size: 25px;}
+
+.grid{flex-direction: row;width: 100vw;overflow-x: scroll;overflow-y: hidden; align-items: center; background-color: rgba(137, 43, 226, 0.13);
+}
+.post{padding:20px 0 20px 20px;}
+.post iframe{width: 270px;height: 387px;border-radius: 8px;}
+.top img{
+    left: 20px;
+}
+.ds{top: 55% !important;}
+
+}
+
