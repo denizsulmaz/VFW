@@ -20,16 +20,22 @@ margin: 5vh 0;
     display: flex;
     flex-direction: column;
     width: 100vw;
-    padding: 5vw 7vw;
+    padding: 2vh 3vw;
     color: white;
     text-align: center;
+    padding-bottom: 10vh;
+    border-bottom: 2px solid white;
 }
 .linktree a{
-    padding: 8px 15px;
+    padding: 12px 15px;
     width: 100%;
     border-radius: 50px;
     margin: 15px 0;
     background-color: #6d06d3;
+}
+.linktree a:nth-of-type(2){
+    opacity: 0.5;
+    pointer-events: none;
 }
 .ds{right: 50px;}
 @media only screen and (max-width:900px){
@@ -44,7 +50,7 @@ margin: 5vh 0;
 .top img{
     left: 20px;
 }
-.ds{top: 55% !important;}
+.ds{top: 55% !important; right: calc(50% - 30px);}
 
 }
 
