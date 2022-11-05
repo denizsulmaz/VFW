@@ -857,6 +857,10 @@ address{
     left: 20px;
     font-size: 14px;
 }
+footer .adres{
+    font-size: 14px;
+    opacity: 0.9;
+}
 footer span{
     font-style: normal;
     font-size: 10px;
