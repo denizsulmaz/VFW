@@ -458,7 +458,7 @@ details summary::-webkit-details-marker {
     background-size: 100%;
     width: 100%;
 }
-.splide .two{
+.two{
     background: url('img/udhrslider.png') no-repeat center;
     background-position: 50% 50%;
     background-size: 100%;
@@ -466,7 +466,7 @@ details summary::-webkit-details-marker {
 }
 .two .left{margin-top: 20vh;width: 30% !important;}
 .two .left p{font-size: 35px;margin-bottom: 0;}
-.splide .three{
+.three{
     position: relative;
     background: url('img/teamslider.png') no-repeat center;
     background-position: 50% 50%;
@@ -496,7 +496,7 @@ details summary::-webkit-details-marker {
 
 }
 #image-slider{z-index: 0;}
-#home .splide__pagination{
+.splide__pagination{
     opacity: 0.7;
     left: unset !important;
     right: 200px !important;
@@ -506,7 +506,7 @@ details summary::-webkit-details-marker {
     width: 95vw;
     z-index: 0;
 }
-#home .splide__slide {
+.splide__slide {
     background-color: #28024f;
     cursor:auto;
     display: flex;
@@ -515,10 +515,10 @@ details summary::-webkit-details-marker {
     height: 100vh;
     width: 100vw;
 }
-#home .splide .splide__arrows{
+.splide .splide__arrows{
     background-color: #000000;
 }
-#home  .splide .splide__arrow {
+.splide .splide__arrow {
     transform: scale(1.1, 1.1) !important;
     cursor: pointer;
     position: absolute;
@@ -532,13 +532,13 @@ details summary::-webkit-details-marker {
     backdrop-filter: blur(4px);
     transition: 0.3s ease-in-out;
 }
-#home  .splide .splide__arrow:hover{backdrop-filter: blur(1px);background-color: rgba(74, 23, 124, 0.4);}
-#home  .splide .splide__arrow svg {
+.splide .splide__arrow:hover{backdrop-filter: blur(1px);background-color: rgba(74, 23, 124, 0.4);}
+.splide .splide__arrow svg {
     filter: invert(1);
     width: 90px;
     height: 90px;
 }
-#home  .splide__arrow.splide__arrow--prev {
+.splide__arrow.splide__arrow--prev {
     font-size: 25px;
     right: 314px;
     left: unset;
@@ -548,7 +548,7 @@ details summary::-webkit-details-marker {
     border-radius: 14px 0 0 14px;
     box-sizing: content-box;
 }
-#home  .splide__arrow.splide__arrow--next {
+.splide__arrow.splide__arrow--next {
     font-size: 25px;
     right: 216px;
     padding: 10px 10px 10px 20px;
@@ -687,7 +687,15 @@ details summary::-webkit-details-marker {
 }
 .line img{
     margin-top: -1vh;
+    width: auto;
+}
+.line .imageBox{
+    display: flex;
     width: 700px;
+    overflow: hidden;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    filter: contrast(2);
 }
 marquee{
     border-radius: 14px;
@@ -716,6 +724,24 @@ marquee{
     width: 80%;
     margin: 0 10%;
 }
+.line a{
+    z-index: 0;
+    transition: 0.4s ease-in-out;
+    color: #ffffff;
+    font-size: 21px;
+    padding: 10px 25px;
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+}
+.line a:hover{
+    background-color:#810CF8;
+    color: rgb(244, 232, 255) !important;
+    padding: 10px 25px;
+    border: 2px solid #810CF8 !important;
+    border-radius: 50px !important;
+
+}
+/* -- */
 .portre{
     position: relative;
     height: 100vh;
@@ -762,11 +788,6 @@ marquee{
 }
 .repr video{
     height: 150vh;
-}
-.info{
-    position: relative;
-    background-color: black;
-    height: 75vh;
 }
 .container{
     border-radius: 20px;
@@ -999,7 +1020,6 @@ footer span{
     .container li{line-height: 120%; font-size: 13px;}
     .container ul{padding: 5px;}
     .MU svg{width: 80px; border-radius: 20px;}
-    .info{height: 65vh; display: none;}
     footer{height: 45vh;} footer a{height: 10vh;}
     #vfw img{left: calc(50% - 50px);top: calc(50% - 125px);width: 100px;}
     .ds{width: 60px; padding:0; top:50%; right: calc(50% - 30px);}
