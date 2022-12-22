@@ -458,7 +458,7 @@ details summary::-webkit-details-marker {
     background-size: 100%;
     width: 100%;
 }
-.two{
+.splide .two{
     background: url('img/udhrslider.png') no-repeat center;
     background-position: 50% 50%;
     background-size: 100%;
@@ -466,7 +466,7 @@ details summary::-webkit-details-marker {
 }
 .two .left{margin-top: 20vh;width: 30% !important;}
 .two .left p{font-size: 35px;margin-bottom: 0;}
-.three{
+.splide .three{
     position: relative;
     background: url('img/teamslider.png') no-repeat center;
     background-position: 50% 50%;
@@ -496,17 +496,17 @@ details summary::-webkit-details-marker {
 
 }
 #image-slider{z-index: 0;}
-.splide__pagination{
+#home .splide__pagination{
     opacity: 0.7;
     left: unset !important;
     right: 200px !important;
     bottom: 30px !important;
 }
-.splide__slide img {
+#home .splide__slide img {
     width: 95vw;
     z-index: 0;
 }
-.splide__slide {
+#home .splide__slide {
     background-color: #28024f;
     cursor:auto;
     display: flex;
@@ -515,10 +515,10 @@ details summary::-webkit-details-marker {
     height: 100vh;
     width: 100vw;
 }
-.splide .splide__arrows{
+#home .splide .splide__arrows{
     background-color: #000000;
 }
-.splide .splide__arrow {
+#home .splide .splide__arrow {
     transform: scale(1.1, 1.1) !important;
     cursor: pointer;
     position: absolute;
@@ -532,13 +532,13 @@ details summary::-webkit-details-marker {
     backdrop-filter: blur(4px);
     transition: 0.3s ease-in-out;
 }
-.splide .splide__arrow:hover{backdrop-filter: blur(1px);background-color: rgba(74, 23, 124, 0.4);}
-.splide .splide__arrow svg {
+#home  .splide .splide__arrow:hover{backdrop-filter: blur(1px);background-color: rgba(74, 23, 124, 0.4);}.splide .splide__arrow:hover{backdrop-filter: blur(1px);background-color: rgba(74, 23, 124, 0.4);}
+#home  .splide .splide__arrow svg {
     filter: invert(1);
     width: 90px;
     height: 90px;
 }
-.splide__arrow.splide__arrow--prev {
+#home .splide__arrow.splide__arrow--prev {
     font-size: 25px;
     right: 314px;
     left: unset;
@@ -548,7 +548,7 @@ details summary::-webkit-details-marker {
     border-radius: 14px 0 0 14px;
     box-sizing: content-box;
 }
-.splide__arrow.splide__arrow--next {
+#home .splide__arrow.splide__arrow--next {
     font-size: 25px;
     right: 216px;
     padding: 10px 10px 10px 20px;
@@ -1037,5 +1037,4 @@ footer span{
     .resWel a{color: #ede4f5;background-color:#810CF8;padding: 7px 20px;border: 2px solid #810CF8;
     border-radius: 50px !important;width: 100px;margin-left: 20px;}
 
-  
 }
