@@ -12,10 +12,11 @@ body{overflow-x: hidden;}
     text-align: center;
 }
 .recentProjects .grid{
-    width: 100%;
+    width: 90vw;
+    overflow-x: scroll;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: row;
 }
 .recentProjects .grid .past{
@@ -25,8 +26,11 @@ body{overflow-x: hidden;}
 .recentProjects .grid .past:hover{
     filter: grayscale(0.2);
 }
-.post iframe{border-radius: 16px;}
-.post:nth-child(2){margin: 0 2vw;}
+.post{
+    width: 240px;
+    margin-right: 35px;}
+.post iframe{border-radius: 8px;width: 240px;height: 350px;}
+.squ iframe{border-radius: 8px;width: 240px;height: 300px;}
 .linktree{
     margin-top: 20vh;
     display: flex;
@@ -62,7 +66,7 @@ body{overflow-x: hidden;}
 .grid{flex-direction: row;width: 100vw;overflow-x: scroll;overflow-y: hidden; align-items: center; background-color: rgba(137, 43, 226, 0.13);
 }
 .post{padding:20px 0 20px 20px;}
-.post iframe{width: 270px;height: 387px;border-radius: 8px;}
+.post iframe{width: 270px;height:387px;border-radius: 8px;}
 .top img{
     left: 20px;
 }
