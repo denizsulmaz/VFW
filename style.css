@@ -459,13 +459,31 @@ details summary::-webkit-details-marker {
     width: 100%;
 }
 .splide .two{
-    background: url('img/udhrslider.png') no-repeat center;
+    background: url('img/artivismWeb.webp') no-repeat center;
     background-position: 50% 50%;
     background-size: 100%;
     width: 100%;
+    position: relative;
+    max-height: 100vh;
 }
-.two .left{margin-top: 20vh;width: 30% !important;}
-.two .left p{font-size: 35px;margin-bottom: 0;}
+.splide .two .nftArtivism{
+    position: absolute;
+    bottom: 20vh;
+    text-align: center;
+}
+.nftArtivism a{
+    background-color: #800BF6;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+.nftArtivism a:hover{
+    background-color: white;
+    color: #28024f;
+}
+.two p{font-size: 16px;margin-bottom: 0;color: white;opacity: 0.7;}
 .splide .three{
     position: relative;
     background: url('img/teamslider.png') no-repeat center;
@@ -936,7 +954,6 @@ footer span{
     opacity: 0.6;
 }
 @media only screen and (max-width:800px) {
-
     .udhr{width: 96vw;margin: 0 2vw;margin-top: 10vh;margin-bottom: -40vh;}
     .udhrRow{height: 50vh;
         display: flex;
@@ -968,7 +985,7 @@ footer span{
         background-size: 100%;
         overflow: hidden;
         margin-top: 2vh;
-        height: 90vh;
+        height: 75vh;
         display: flex;
         flex-direction: column;
     }
@@ -984,6 +1001,7 @@ footer span{
     .eventLeft img{width: 290px; border-radius: 16px;margin-bottom: 10px;}
     .eventRight{font-size: 16px;margin-left: 0%;width: 100%; margin-top: 3vh;}
     /* ---- */
+    .top{height: 6vh;}
     .top img{top: 1vh;}
     .menu-toggle img{width: 30px;}
     .menu-toggle{top: 1.7vh;}
@@ -999,20 +1017,23 @@ footer span{
     .wrapper h1{font-size: 25px;padding-bottom: 25px;margin: 0;}
     .wrapper p{ width: 90%; margin: 0 5%;font-size: 16px;}
     .line{flex-direction: column; height: auto;}
+    .line .imageBox {width: auto;}
     .line .left{width: 100%; padding: 0;}
     .line .right{width: 100%;}
-    .line .text{width: 86%; margin: 0 7%; text-align: center;}
-    .line h1{font-size: 25px; letter-spacing: 2px;}
-    .line p{line-height: 120%; text-align:center; font-size: 17px;}
+    .line .text{width: 96%; margin: 0 2% 5vh 2%; text-align: center;}
+    .line h1{font-size: 21px; letter-spacing: 2px;}
+    .line p{line-height: 120%; text-align:center; font-size: 13px;}
     .line img{width: 70vw;margin-left: calc(50% - 35vw);border-radius: 30px; margin-bottom: 5vh;}
     marquee{border-radius: 120px;font-size:35px;}
     /* ------- */
-    .portre{margin-bottom: 25vh;z-index: 1;}
+    .portre{margin-bottom: 25vh;z-index: 1; height: 80vh;}
     .portre .alone{top:0px;left: 20px;}
     .portre .forall{bottom:0px;right:40px;}
+    .portre img {left: calc(50% - 110px);top: calc(50% - 150px);width: 220px;}
     .repr{flex-direction: column-reverse;z-index: 0;margin-top: -25vh;}
     .repr .left{width: 100%; margin:0;margin-top: 10vh; padding: 0;padding-bottom: 5vh;flex-direction: column;display: flex;}
-    .repr .right{height: 40vh !important;margin-top: -25vh;padding-bottom: 25vh;}
+    .repr .right{height: 30vh !important;margin-top: -20vh;padding-bottom: 25vh;justify-content: center;}
+    .repr video{height: 100vh;}
     /* ------- */
     .container{margin: 10px 15px;padding: 5px 7px; height: 60vh;}
     .container h1{font-size: 18px; top: -5px;}
@@ -1022,17 +1043,17 @@ footer span{
     .MU svg{width: 80px; border-radius: 20px;}
     footer{height: 45vh;} footer a{height: 10vh;}
     #vfw img{left: calc(50% - 50px);top: calc(50% - 125px);width: 100px;}
-    .ds{width: 60px; padding:0; top:50%; right: calc(50% - 30px);}
+    .ds{width: 50px; padding:0; top:50%; right: calc(50% - 25px);}
     .ds a{height: 10vh;}
-    .ds img{width: 60px;}
+    .ds img{width: 50px;}
     .TLogo h1{font-weight: 400;font-size: 20px;}
     .social{display: none;}
     .un img{width: 320px;margin-left: calc(50% - 160px);margin-bottom: 10vh;}
     #image-slider{display: none;}
     .resWel{display: flex;justify-content: center;text-align: left;flex-direction: column;
-    width: 100%;margin-top:27vh; padding: 80px 0;padding-bottom: 0;}
+    width: 100%;margin-top:27vh; padding: 40px 0;padding-bottom: 0;}
     .resWel h2{text-align: left;font-size: 18px; width: 90vw; margin-top: -10px;font-weight: 500;color: #E3E8EB;margin-left: 20px;}
-    .resWel img{width: 20%;margin-top: -27%;margin-bottom: 10%;align-self: flex-end;}
+    .resWel img{display: none;}
     .resWel p{width: 90%;font-size: 14px;padding-bottom: 10px;color: #d7afff;margin-left: 20px;margin-top: -5px;line-height: 150%;}
     .resWel a{color: #ede4f5;background-color:#810CF8;padding: 7px 20px;border: 2px solid #810CF8;
     border-radius: 50px !important;width: 100px;margin-left: 20px;}
